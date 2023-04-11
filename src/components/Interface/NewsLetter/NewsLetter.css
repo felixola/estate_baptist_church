@@ -1,0 +1,8 @@
+.box{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.178), rgba(255, 255, 255, 0.178)),  url('../../../assets/images/3439367_61764.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    
+}  

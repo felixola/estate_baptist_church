@@ -1,0 +1,41 @@
+.cardcomp{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.42)), url('../../../assets/images/dmitry-spravko-2h2qn9_1sxo-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+blockquote {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 50px;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+}
+
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: 5px;
+    top: -50px;
+    color: #7a7a7a;
+}
+
+
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
+}

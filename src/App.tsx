@@ -1,25 +1,50 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from '@mui/material/styles';
+import { CssBaseline, Box, Divider } from '@mui/material';
+import { BrowserRouter as Router , Routes, Route } from 'react-router-dom';
+import { routes as navRoutes } from './routes/route';
+import theme from './components/Theme';
+import Header from './layouts/Header/Header';
+import SubHeader from './layouts/SubHeader/SubHeader';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <ThemeProvider theme={theme}>
+
+      <CssBaseline />
+
+      <Box display='flex' flexDirection='column' height='100%'>
+
+        <Router>
+          
+          <SubHeader />
+
+          <Divider />
+
+          <Header />
+
+          <Divider />
+
+          <Routes>
+
+            {navRoutes.map ((route: any) => (
+
+             <Route
+             key={route.key}
+             path={route.path}
+             element={<route.component />}
+           />
+
+            ))}
+
+          </Routes>
+
+        </Router>
+
+      </Box>
+      
+   </ThemeProvider>
   );
 }
 
