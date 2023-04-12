@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/estate_baptist_church/static/css/main.982ba1c2.css",
+    "main.js": "/estate_baptist_church/static/js/main.e1ac59b2.js",
+    "static/media/image3.jpg": "/estate_baptist_church/static/media/image3.5155bc6b9958ba883889.jpg",
+    "static/media/3439367_61764.jpg": "/estate_baptist_church/static/media/3439367_61764.a9ea94ca368cb8762a5d.jpg",
+    "static/media/image2.jpg": "/estate_baptist_church/static/media/image2.da2d0310ab7024d6b39f.jpg",
+    "static/media/image1.jpg": "/estate_baptist_church/static/media/image1.20fc230cbb162e4d0b07.jpg",
+    "static/media/dmitry-spravko-2h2qn9_1sxo-unsplash.jpg": "/estate_baptist_church/static/media/dmitry-spravko-2h2qn9_1sxo-unsplash.1ff075336644a9211c8d.jpg",
+    "static/media/pexels-vadym-alyekseyenko-13543581.jpg": "/estate_baptist_church/static/media/pexels-vadym-alyekseyenko-13543581.8711da4ce5aca8dbe7c7.jpg",
+    "static/media/dominion.png": "/estate_baptist_church/static/media/dominion.42c3940ac353671141bd.png",
+    "static/media/pastor.jpg": "/estate_baptist_church/static/media/pastor.7e89ee47bf99637756e4.jpg",
+    "static/media/EBC.svg": "/estate_baptist_church/static/media/EBC.c96ee46da4ac8207f27c9564d9e226eb.svg",
+    "static/media/Fforma2.png": "/estate_baptist_church/static/media/Fforma2.dad201f52c1f144968f2.png",
+    "static/media/ga.png": "/estate_baptist_church/static/media/ga.6dee6b20b387a4fd8b96.png",
+    "static/media/19184237_6068294.jpg": "/estate_baptist_church/static/media/19184237_6068294.41ca0ed990ddbc0b4d0c.jpg",
+    "static/media/bsf.png": "/estate_baptist_church/static/media/bsf.1839545fb684ea04bb26.png",
+    "static/media/13107746_5134336.jpg": "/estate_baptist_church/static/media/13107746_5134336.2639060ef7990e0302be.jpg",
+    "static/media/newsletter.jpg": "/estate_baptist_church/static/media/newsletter.2639060ef7990e0302be.jpg",
+    "static/media/trace.svg": "/estate_baptist_church/static/media/trace.39199e496b9f3eb385c7200ff7964294.svg",
+    "static/media/NBC.jpg": "/estate_baptist_church/static/media/NBC.38f2302f90ef378eee49.jpg",
+    "index.html": "/estate_baptist_church/index.html",
+    "static/media/menu.svg": "/estate_baptist_church/static/media/menu.6882b40c75bf8bb6b5aaaea13d221b44.svg",
+    "main.982ba1c2.css.map": "/estate_baptist_church/static/css/main.982ba1c2.css.map",
+    "main.e1ac59b2.js.map": "/estate_baptist_church/static/js/main.e1ac59b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.982ba1c2.css",
+    "static/js/main.e1ac59b2.js"
+  ]
+}
