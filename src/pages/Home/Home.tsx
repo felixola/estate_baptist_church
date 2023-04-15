@@ -17,7 +17,8 @@ import NewspaperIcon from '@mui/icons-material/Newspaper';
 import CardComponent from '../../components/Interface/CardComponent/CardComponent';
 import domi from '../../assets/images/dominion.png';
 import bsf from '../../assets/images/bsf.png';
-import Book from '../../assets/images/books.png';
+import Book from '../../assets/svgs/book-open.svg';
+import Executive from '../../assets/svgs/users-group.svg';
 import Ga from '../../assets/images/ga.png';
 import Ra from '../../assets/images/Fforma2.png';
 import NBC from '../../assets/images/NBC.jpg';
@@ -43,19 +44,19 @@ const Home: React.FC<MarqueeProps> = () => {
     <ThemeProvider theme={theme}>
 
 
-      <Box className='background' sx={{ paddingLeft: { xs: '20px', md: '60px' }, height: { xs: '450px', md: '600px' } }} width='100%' display='flex' justifyContent='center' alignItems='center'>
+      <Box className='background' sx={{ height: { xs: '450px', md: '600px' } }} width='100%' display='flex' justifyContent='center' alignItems='center'>
 
 
-        <Stack direction='column' spacing={2} sx={{ paddingRight: { md: '620px', xs: '20px' } }} className='parent'>
+        <Stack direction='column' spacing={2}  className='parent' sx={{padding:'10px', paddingTop: '0 !important'}}>
 
-          <Typography sx={{ fontSize: { md: '4.2rem', xs: '3.2em' } }} variant='h2' fontWeight='700' color='#000000' lineHeight='1.1em'>
-            <span style={{ color: '#ffb174', }}>Estate  <br /> </span>Baptist Church</Typography>
+          <Typography align='center' sx={{ fontSize: { md: '4.2rem', xs: '3.2em' } }} variant='h2' fontWeight='800' color='#FFFFFF' lineHeight='1.1em'>
+            <span style={{ color: '#ffb174', }}>Estate  </span>Baptist Church</Typography>
 
-          <Typography color='#000000' sx={{ fontSize: { md: '20px', xs: '16px' } }} fontWeight='400'> A group of individuals in a small town
-            the United States began to discuss their and shared beliefs and desire just to  all come together and
+          <Typography align='center' color='#FFFFFF' sx={{ fontSize: { md: '20px', xs: '16px' } }} fontWeight='400'> A group of individuals in a small town
+            the  United States and Nigeria <br />
 
             {/* Typewriter */}
-            <span style={{ fontWeight: '600' }}> &nbsp;
+            <span style={{ fontWeight: '600', }}> &nbsp;
               <Typewriter
                 words={['Worship', 'Pray', 'Fellowship']}
                 loop={1000000000000000}
@@ -66,19 +67,20 @@ const Home: React.FC<MarqueeProps> = () => {
                 delaySpeed={1000} />
             </span>
           </Typography>
+        
 
-          <Stack direction='row' spacing={2}>
+          <Stack direction='row' spacing={2} display='flex' alignItems='center' justifyContent='center'>
             <ViewMore variant='contained'>View More</ViewMore>
             <Donations>Donations</Donations>
           </Stack>
         </Stack>
 
 
-        <Stack spacing={1} direction='row' className="content" >
+        <Stack spacing={1} direction='row' className="content" display='flex' alignItems='center' justifyContent='center'>
 
           <AccessTimeIcon sx={{ color: '#ffb174' }} />
 
-          <Typography color='#777' data-aos="fade-left" >Join us on Sunday by 9pm</Typography>
+          <Typography color='#FFFFFF' data-aos="fade-left" >Join us on Sunday by 9pm</Typography>
 
         </Stack>
 
@@ -86,7 +88,7 @@ const Home: React.FC<MarqueeProps> = () => {
 
 
       <Box mt='70px'>
-        <Marquee gradient={false} speed={50}>
+        <Marquee gradient={false} speed={80}>
           <Stack direction='row' height='100px'>
             <Box className='container' display='flex' alignItems='center' justifyContent='center'>
               <img src={NBC} className='marquee-images' alt="nbc" />
@@ -205,6 +207,7 @@ const Home: React.FC<MarqueeProps> = () => {
         <Grid container>
           <Grid item md={6} xs={12} height='350px' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Stack direction='column' spacing={2} sx={{ paddingLeft: { xs: '20px', md: '60px' } }} >
+              
 
               <Typography align='left' sx={{ fontSize: { md: '40px', xs: '26px' } }} fontWeight='600' color='#000000'>
                 Upcoming
@@ -216,6 +219,7 @@ const Home: React.FC<MarqueeProps> = () => {
                 This event will be a great opportunity for all of us to come together and celebrate
                 our organization's achievements as well as plan for the future.
               </Typography>
+            
 
               <ReadMore sx={{ display: { xs: 'flex', md: 'none' }, }} variant='outlined' endIcon={<ArrowForwardIosOutlinedIcon />}>Read More</ReadMore>
             </Stack>
@@ -237,9 +241,9 @@ const Home: React.FC<MarqueeProps> = () => {
         <Stack display='flex' justifyContent='center' alignItems='center'>
 
         <img src={Book} alt="book" style={{ width: '50px' }} />
-      <Typography align='center' sx={{ fontSize: { md: '36px', xs: '26px' } }} fontWeight='800'>Latest Sermon</Typography>
-         <Typography mb='20px' align='center' variant='h6' fontWeight='400' color='#777'>
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <Typography align='center' sx={{ fontSize: { md: '36px', xs: '26px' } }} fontWeight='900'>LATEST SERMON</Typography>
+         <Typography mb='20px' variant='h6' fontWeight='400' align='center' color='#777'>
+         Don't miss out on any sermon
          </Typography>
         </Stack>
      
@@ -253,11 +257,15 @@ const Home: React.FC<MarqueeProps> = () => {
 
 
       <Box width='100%' mt='80px'>
+      <Stack display='flex' justifyContent='center' alignItems='center'>
+      <img src={Executive} alt="executives" style={{ width: '50px' }} />
         <Typography align='center' sx={{ fontSize: { md: '36px', xs: '26px' } }} fontWeight='900'>EXECUTIVES</Typography>
          <Typography mb='20px' align='center' variant='h6' fontWeight='400' color='#777'>All elected council members 2023</Typography>
-        <Marquee gradient={false} speed={50}>
+         </Stack>
+        <Marquee gradient={false} speed={80}>
           <CardComponent />
         </Marquee>
+
 
       </Box>
 

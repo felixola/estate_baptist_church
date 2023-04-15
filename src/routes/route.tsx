@@ -22,7 +22,7 @@ export const routes : Array<Route> = [
     {
         key: "home-route",
         title: "Home", 
-        path: "/",
+        path: "/estate_baptist_church",
         enable: true,
         component: Home,
     },

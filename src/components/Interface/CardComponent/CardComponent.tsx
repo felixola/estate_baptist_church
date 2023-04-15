@@ -17,10 +17,11 @@ const CardComponent: React.FC = () => {
       <Grid container sx={{ display: 'flex', justifyContent: "center", alignItems: "center" }}>
 
         {/* Pastor */}
-        <Grid item md={4} xs={12} display='flex' alignItems='center' justifyContent='center'>
+        <Grid item md={4} xs={4} display='flex' alignItems='center' justifyContent='center'>
 
           <Box maxWidth='350px'
            height='400px' 
+           mr='20px'
            display='flex' 
            alignItems='center' 
            justifyContent='center' 
@@ -48,9 +49,9 @@ const CardComponent: React.FC = () => {
         </Grid>
 
         {/* Our mission */}
-        <Grid item md={4} xs={12} display='flex' alignItems='center' justifyContent='center'>
+        <Grid item md={4} xs={4} display='flex' alignItems='center' justifyContent='center'>
 
-          <Box maxWidth='350px' height='400px' display='flex' alignItems='center' justifyContent='center' sx={{ border: '1px solid #EEEEEE', borderRadius: '15px', textAlign: 'center' }}>
+          <Box mr='20px'  maxWidth='350px' height='400px' display='flex' alignItems='center' justifyContent='center' sx={{ border: '1px solid #EEEEEE', borderRadius: '15px', textAlign: 'center' }}>
 
             <Stack direction='column' spacing={3} display='flex' alignItems='center' justifyContent='center' width='100%'>
 
@@ -75,9 +76,9 @@ const CardComponent: React.FC = () => {
         </Grid>
 
         {/* Our Values */}
-        <Grid item md={4} xs={12} display='flex' alignItems='center' justifyContent='center'>
+        <Grid item md={4} xs={4} display='flex' alignItems='center' justifyContent='center'>
 
-          <Box maxWidth='350px' height='400px' display='flex' alignItems='center' justifyContent='center' sx={{ border: '1px solid #EEEEEE', borderRadius: '15px', textAlign: 'center' }}>
+          <Box mr='20px' maxWidth='350px' height='400px' display='flex' alignItems='center' justifyContent='center' sx={{ border: '1px solid #EEEEEE', borderRadius: '15px', textAlign: 'center' }}>
 
             <Stack direction='column' spacing={3} display='flex' alignItems='center' justifyContent='center' width='100%'>
 
@@ -85,8 +86,7 @@ const CardComponent: React.FC = () => {
               <Avatar
                 alt="Remy Sharp"
                 src={image3}
-                sx={{ width: 80, height: 80 }}
-              />
+                sx={{ width: 80, height: 80 }}/>
 
               <Typography align='center' variant='h5' color=' #000000' fontWeight='600'> Mr Bamikole Oluwafemi</Typography>
               <Typography align='center' mt='0 !important' color='#3d6cb9' fontWeight='400'>Financial Secretary</Typography>
@@ -95,11 +95,7 @@ const CardComponent: React.FC = () => {
                 It is not the critic who counts; not the man  who points out how the strong man stumbles, or where the doer of deeds
               </blockquote>
 
-
             </Stack>
-
-
-
 
           </Box>
 

@@ -6,7 +6,7 @@
     background-attachment: scroll;
 } */
 .background{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.137), rgba(255, 255, 255, 0.132)),  url('../../assets/images/pexels-vadym-alyekseyenko-13543581.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(9, 9, 9, 0.42)),  url('../../assets/images/duncan-sanchez-H3c5gN8LoqA-unsplash.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,6 +38,7 @@
     display: block;
     margin: 0 auto;
 }
+
 
 /* .blur{
     height: 100%;
@@ -86,3 +87,18 @@
     background-attachment: scroll;
 
 }
+
+@media only screen and (max-width: 600px) {
+    .container{
+        height: 45px;
+        width: 45px;
+        margin-left: 100px;
+    }
+    .marquee-images{
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+  }

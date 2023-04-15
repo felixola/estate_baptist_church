@@ -31,18 +31,18 @@ const ReadMore = styled(Button)({
     width: '150px', 
     boxShadow: 'none',
     height: '45px', 
-    borderRadius: '25px',
+    // borderRadius: '25px',
     '&:hover': {
       backgroundColor: '#40514e',
     }
   })
   const Donations = styled(Button)({
     // backgroundColor: '#3d6cb9',
-    border: '2px solid #3d6cb9',
-    color: '#3d6cb9',
+    border: '2px solid #FFFFFF',
+    color: '#FFFFFF',
     fontSize: '14px',
     width: '150px', 
-    borderRadius: '25px',
+    // borderRadius: '25px',
     height: '45px', 
     '&:hover': {
       backgroundColor: '#40514e',

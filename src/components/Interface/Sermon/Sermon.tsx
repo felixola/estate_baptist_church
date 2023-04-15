@@ -16,25 +16,25 @@ const Sermon: React.FC = () => {
 
         {/* Grid 1 */}
 
-        <Grid item md={6} direction="row"
+        <Grid item md={6} xs={12} direction="row"
           justifyContent="center"
           alignItems="center">
 
-          <Stack direction="row">
+          <Stack direction="row"  >
 
-            <Box width='600px' >
+            
               <YoutubeEmbed embedId="o4xD01nVVR4" />
-            </Box>
+         
 
 
             <Stack direction='column' spacing={1}>
-              <Typography variant='h5' fontWeight='500'>Alive with Christ</Typography>
+              <Typography variant='h5' fontWeight='500' >Alive with Christ</Typography>
               <Typography color='#777' fontWeight='400'>Speaker:
                 <span style={{ color: '#cb3b3b' }}> Revd M.O Akinola</span>
               </Typography>
+
+              <Typography variant='body1'  color='#777' fontWeight='400' >Lorem ipsum dolor sit amet </Typography>
               <Typography color='#777' fontWeight='400'> Date: 1 April 2023 </Typography>
-              <Typography color='#777' fontWeight='400'> Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. </Typography>
 
               <Stack direction='row'>
                 <Link underline='none' href="#" variant="button" color='#cb3b3b'> Read More
@@ -52,9 +52,9 @@ const Sermon: React.FC = () => {
         {/* Grid 2 */}
 
 
-        <Grid item md={6} direction="row"
+        <Grid item md={6} xs={12} direction="row"
           justifyContent="center"
-          alignItems="center">
+          alignItems="center" sx={{ display: {xs: 'none', md: 'block'}}}>
 
           <Stack direction="row">
 
@@ -65,8 +65,6 @@ const Sermon: React.FC = () => {
                 <span style={{ color: '#cb3b3b' }}> Revd A.J Adefarasin</span>
               </Typography>
               <Typography color='#777' fontWeight='400'> Date: 6 April 2023 </Typography>
-              <Typography color='#777' fontWeight='400'> ipsum dolor sit, amet consectetur  Lorem
-                adipisicing elit. </Typography>
 
               <Stack direction='row'>
                 <Link underline='none' href="#" variant="button" color='#cb3b3b'> Read More
@@ -75,9 +73,9 @@ const Sermon: React.FC = () => {
               </Stack>
             </Stack>
 
-            <Box width='600px' >
+            
               <YoutubeEmbed embedId="57Mw8HcQVS0" />
-            </Box>
+           
 
           </Stack>
 

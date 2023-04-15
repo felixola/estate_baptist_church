@@ -16,7 +16,7 @@ const SubHeader: React.FC = () => {
          <Box sx={{ width: '100%', padding: {xs: '20px', md: '20px'},  background: '#FFFFFF', display: 'flex', alignItems: 'center'}}>
 
                 {/* Email */}
-            <Stack direction='row' spacing={0.5} px='12px'>
+            <Stack direction='row' spacing={0.5} sx={{paddingLeft: {xs: '5px', md: '12px'}}}>
 
                 <MailOutlineIcon sx={{color: '#3d6cb9', fontSize: {xs: '20px', md: '22px'}}} fontSize='small' /> 
 
