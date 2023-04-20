@@ -60,10 +60,11 @@ const Sermon: React.FC = () => {
 
 
             <Stack direction='column' spacing={1}>
-              <Typography variant='h5' fontWeight='500'>Resurrection</Typography>
+              <Typography variant='h5' fontWeight='500'>Resurrection Celebration</Typography>
               <Typography color='#777' fontWeight='400'>Speaker:
                 <span style={{ color: '#cb3b3b' }}> Revd A.J Adefarasin</span>
               </Typography>
+              <Typography variant='body1'  color='#777' fontWeight='400' >Lorem ipsum dolor sit amet </Typography>
               <Typography color='#777' fontWeight='400'> Date: 6 April 2023 </Typography>
 
               <Stack direction='row'>

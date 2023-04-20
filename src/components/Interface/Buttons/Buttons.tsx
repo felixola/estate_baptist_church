@@ -58,7 +58,20 @@ const ReadMore = styled(Button)({
     '&:hover': {
       backgroundColor: '#40514e',
     }
+  });
+
+  const ArrowRight = styled(Button)({
+    backgroundColor: '#3d6cb9', 
+    boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)',
+    height: '40px',
+    width: '30px',
+    border: 'none', 
+    borderRadius: '0px',
+    color: '#FFFFFF', 
+    '&:hover': {
+      backgroundColor: '#40514e',
+    }
   })
 
 
-  export { ReadMore, ViewMore, Donations, WorshipBtn, Right }
+  export { ReadMore, ViewMore, Donations, WorshipBtn, Right, ArrowRight }

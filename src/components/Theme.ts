@@ -2,7 +2,7 @@ import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
     typography : {
-        fontFamily: ['Work Sans', 'sans-serif'].join(',')
+        fontFamily: ['Work sans', 'sans-serif'].join(',')
     },
     palette: {
         primary: {

@@ -34,6 +34,15 @@ const Header: React.FC = () => {
               {/* Logo */}
               <img src={Logo} alt='logo' className='logo'/>
 
+              {/* <Box width='100%'>
+              <Typography align='left' fontWeight='900' sx={{fontSize:'10px'}}> ESTATE BAPTIST   
+
+                  <span style={{color: '#1c79c0'}}> CHURCH </span>
+              </Typography>
+              </Box> */}
+
+            
+
               { isMobile ? (
                  <Box sx={{width: '100%', display: 'flex', marginRight: '0px', justifyContent:'end'}}>
                  <DrawerComponent />

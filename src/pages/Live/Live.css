@@ -1,0 +1,10 @@
+.avatar{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.521), rgba(255, 255, 255, 0.521)), url('../../assets/images/19184237_6068294.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.video{
+    width: 25px;
+}

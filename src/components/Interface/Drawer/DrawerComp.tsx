@@ -13,7 +13,7 @@ import { NavLink } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../../Theme";
 import { routes } from "../../../routes/route";
-import Menu from '../../../assets/svgs/menu-alt-02.svg';
+import MenuIcon from '@mui/icons-material/Menu';
 import './Drawer.css';
 
 
@@ -61,7 +61,7 @@ const DrawerComponent: React.FC = () => {
    
 
       <IconButton onClick={() => setOpenDrawer(!openDrawer)} sx={{ marginLeft: 'auto'}}>
-        <img src={Menu} style={{height: '30px'}} alt='menu-icon'/>
+        <MenuIcon sx={{color: '#000000'}}/>
       </IconButton>
 
 
