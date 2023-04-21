@@ -26,7 +26,7 @@ const Header: React.FC = () => {
 
       <ThemeProvider theme={theme}>
 
-        <Box sx={{ width: '100%', height: 'auto', background: '#FFFFFF',  zIndex: 3, position: 'sticky', top: '0px',}}>
+        <Box sx={{ width: '100%', height: 'auto', background: '#FFFFFF',  zIndex: 3, position: 'sticky', top: '0px', boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' }}>
 
           <Container maxWidth='xl'>
 

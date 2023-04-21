@@ -1,0 +1,88 @@
+ <Grid item xs={12} px='20px' >
+
+              <Stack mt='20px' direction='column' spacing={0}>
+                <Typography fontWeight='900'> TODAY</Typography>
+
+              </Stack>
+
+
+              <Stack pb='20px' spacing={0} direction='column' mt='20px' sx={{ boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' }}>
+                <YoutubeEmbed embedId="sVKNQ0OaeuY" />
+
+                <Box pl='15px' mt='10px'>
+
+                  <Stack direction='row' spacing={1} >
+
+                    <Avatar alt="Remy Sharp" sx={{ width: 35, height: 35 }} src={avatarimage1} />
+                    <Stack direction='column' spacing={0}>
+
+                      <Typography fontWeight='600'> Elewi E'lse </Typography>
+                      <Typography fontWeight='400' color='#919191'>Spirit of prophecy</Typography>
+                      <Typography fontWeight='400' color='#919191' variant='body2'>2hrs ago</Typography>
+
+                    </Stack>
+                  </Stack>
+                </Box>
+              </Stack>
+
+            </Grid>
+
+
+          {/* Older */ }
+            < Grid item xs = { 12} px = '20px' >
+
+            <Stack mt='20px' direction='column' spacing={0}>
+              <Typography fontWeight='900'> OLDER</Typography>
+
+            </Stack>
+
+            <Stack pb='20px' spacing={0} direction='column' mt='20px' sx={{ boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' }}>
+              <YoutubeEmbed embedId="3xcIXPcT4ys" />
+
+              <Box pl='15px' mt='10px'>
+                <Stack direction='row' spacing={1} display='flex' alignItems='center'>
+
+                  <Avatar alt="Remy Sharp" src={avatarimage2} sx={{ width: 35, height: 35 }} />
+
+                  <Stack direction='column' spacing={0}>
+
+                    <Typography fontWeight='600'> Victory Begins In The Dark</Typography>
+                    <Typography fontWeight='400' color='#919191'> Joel Osteen</Typography>
+                    <Typography fontWeight='400' color='#919191'>Yesterday</Typography>
+                  </Stack>
+                </Stack>
+              </Box>
+            </Stack>
+
+          </Grid>
+
+
+        {/* 2 */}
+
+        <Grid item xs={12} px='20px' >
+
+          <Stack mt='20px' direction='column' spacing={0}>
+
+          </Stack>
+
+          <Stack pb='20px' spacing={0} direction='column' mt='20px' sx={{ boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' }}>
+            <YoutubeEmbed embedId="-C213vCvVuc" />
+
+            <Box pl='15px' mt='10px'>
+
+              <Stack direction='row' spacing={1} display='flex' alignItems='center'>
+
+                <Avatar alt="Remy Sharp" src={avatarimage2} sx={{ width: 35, height: 35 }} />
+
+                <Stack direction='column' spacing={0}>
+                  <Typography fontWeight='600'>Tomorrow Belongs to God </Typography>
+                  <Typography fontWeight='400' color='#919191'> Bishop TD Jakes </Typography>
+                  <Typography fontWeight='400' color='#919191'>01/Jan/2023</Typography>
+                </Stack>
+              </Stack>
+
+
+            </Box>
+          </Stack>
+
+        </Grid>

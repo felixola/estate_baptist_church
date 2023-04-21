@@ -1,21 +1,88 @@
 import React from 'react';
-import { Box, Stack, IconButton, Typography, Divider, AvatarGroup, Avatar, Grid, Fab, } from '@mui/material';
+import {
+  Box,
+  Stack,
+  IconButton,
+  Typography,
+  Divider,
+  AvatarGroup,
+  Avatar,
+  Grid,
+  Fab,
+  Breadcrumbs,
+  Pagination
+} from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../../components/Theme';
 import YoutubeLive from '../../components/Interface/YoutubeLive/YoutubeLive';
-import TuneIcon from '@mui/icons-material/Tune';
-import LiveTvIcon from '@mui/icons-material/LiveTv';
-import avatarimage1 from '../../assets/images/image3.jpg';
+import VideocamIcon from '@mui/icons-material/Videocam';
+import image1 from '../../assets/images/image3.jpg';
+import image2 from '../../assets/images/image2.jpg';
+import image3 from '../../assets/images/image3.jpg';
 import avatarimage2 from '../../assets/images/pastor.jpg';
-import Video from '../../assets/svgs/video.svg';
+import avatarimage1 from '../../assets/images/pastor.jpg';
 import './Live.css';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import YoutubeEmbed from '../../components/Interface/YoutubeEmbed/YoutubeEmbed';
-import NewsLetter from '../../components/Interface/NewsLetter/NewsLetter';
-import { ArrowRight } from '../../components/Interface/Buttons/Buttons';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Footer from '../../layouts/Footer/Footer';
+import Search from '../../assets/svgs/search.svg';
+import Settings from '../../assets/svgs/setting-config.svg';
+import HomeIcon from '@mui/icons-material/Home';
+import Link from '@mui/material/Link';
 // AIzaSyBlq7GCUq5P3vmXGT-q9G8_N_o4ySkqSJc
+
+
+interface Item {
+  id: number;
+  Head?: string;
+  Youtube: string;
+  Avat: any;
+  Title: string;
+  Minister: string;
+  Time: string;
+
+}
+
+export const items: Array<Item> = [
+  {
+    id: 1,
+    Head: "TODAY",
+    Youtube: "sVKNQ0OaeuY",
+    Avat: image1,
+    Title: "ElEWI E'LESE",
+    Minister: "Spirit of prophecy",
+    Time: "2hrs ago",
+  },
+
+  {
+    id: 2,
+    Head: "OLDER",
+    Youtube: "3xcIXPcT4ys",
+    Avat: avatarimage1,
+    Title: "VICTORY BEGINS IN THE DARK",
+    Minister: "Joel Osteen",
+    Time: "Yesterday",
+  },
+  {
+    id: 3,
+    Youtube: "-C213vCvVuc",
+    Avat: image2,
+    Title: "TOMORROW BELONGS TO GOD",
+    Minister: "Bishop TD Jakes",
+    Time: "01/Jan/2023",
+  },
+  {
+    id: 4,
+    Youtube: "1oSthbCBkhU",
+    Avat: image3,
+    Title: "THE VICTORIOUS CHRISTAIN",
+    Minister: "Tony Evans Classics",
+    Time: "23/Dec/2023",
+  },
+
+
+];
+
 
 const Live: React.FC = () => {
 
@@ -23,15 +90,35 @@ const Live: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
 
+      <Box role="presentation" mt='10px' ml='10px'>
+        <Breadcrumbs aria-label="breadcrumb">
+          <Link
+            underline="hover"
+            sx={{ display: 'flex', alignItems: 'center' }}
+            color="inherit"
+            href="/">
+            <HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+            Home
+          </Link>
+          <Link
+            underline="hover"
+            sx={{ display: 'flex', alignItems: 'center' }}
+            color="inherit"
+            href="/material-ui/getting-started/installation/">
+            <VideocamIcon sx={{ mr: 0.5 }} fontSize="inherit" />
+            Live
+          </Link>
+        </Breadcrumbs>
+      </Box>
+
       <Box className='avatar'>
 
-        <Stack direction='column' display='flex' alignItems='center' justifyContent='center' mt='20px'>
-          <img src={Video} alt='video' className='video' />
+        <Stack direction='column' display='flex' alignItems='center' justifyContent='center' mt='40px'>
+          <VideocamIcon sx={{ color: '#ffb174', fontSize: '40px' }} />
 
-          <Typography fontWeight='800' variant='h6' align='center'>Watch EBC Live Streaming</Typography>
+          <Typography fontWeight='900' variant='h6' align='center'>WATCH EBC LIVE STREAMING</Typography>
+          <Typography fontWeight='400' variant='body1' align='center' color='#919191'>Stream and view all live videos</Typography>
         </Stack>
-
-
 
         {/* Youtube video */}
         <Stack width='100%' mt='20px'>
@@ -52,7 +139,7 @@ const Live: React.FC = () => {
 
             </AvatarGroup>
 
-            <Typography variant='subtitle1' fontWeight='600'>Experiencing God </Typography>
+            <Typography variant='subtitle1' fontWeight='700'>Experiencing God </Typography>
 
           </Stack>
 
@@ -66,14 +153,14 @@ const Live: React.FC = () => {
         <Stack direction='row' spacing={0} alignItems='center' flexGrow='1'>
 
           <IconButton >
-            <TuneIcon sx={{ color: '#000000' }} />
+            <img src={Settings} alt='settings' className='icons' />
           </IconButton>
 
           <Typography variant='body1' fontWeight='400'>Filter</Typography>
         </Stack>
 
         <IconButton>
-          <LiveTvIcon sx={{ color: '#000000' }} />
+          <img src={Search} alt='search' className='icons' />
         </IconButton>
       </Box>
 
@@ -86,101 +173,42 @@ const Live: React.FC = () => {
         {/* Sermon videos */}
         <Grid container>
 
-          <Grid item xs={12} px='20px' >
+          {items.map((cart) => (
 
-            <Stack mt='20px' direction='column' spacing={0}>
-              <Typography fontWeight='700'> TODAY</Typography>
+            <Grid item xs={12} px='20px'>
+              <Stack mt='20px' direction='column' spacing={0}>
+                <Typography fontWeight='900'>{cart.Head}</Typography>
 
-            </Stack>
+              </Stack>
 
+              <Stack pb='20px' spacing={0} direction='column' mt='20px' sx={{ boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' }}>
+                <YoutubeEmbed embedId={cart.Youtube} />
 
-            <Stack pb='20px' spacing={0} direction='column' mt='20px' sx={{ boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' }}>
-              <YoutubeEmbed embedId="sVKNQ0OaeuY" />
+                <Box pl='15px' mt='15px'>
+                  <Stack direction='row' spacing={1} display='flex' alignItems='center'>
 
-              <Box pl='15px' mt='10px'>
+                    <Stack direction='column' spacing={0}>
 
-              <Stack direction='row' spacing={1} display='flex' alignItems='center'>
+                      <Avatar alt="Remy Sharp" src={cart.Avat} sx={{ width: 35, height: 35 }} />
 
-                <Avatar alt="Remy Sharp" sx={{ width: 35, height: 35 }} src={avatarimage1} />
-                <Stack direction='column' spacing={0}>
+                      <Typography fontWeight='700'>{cart.Title}</Typography>
+                      <Typography fontWeight='400' color='#919191'> {cart.Minister}</Typography>
+                      <Typography fontWeight='400' color='#919191' variant='body2'>{cart.Time}</Typography>
+                    </Stack>
+                  </Stack>
+                </Box>
+              </Stack>
+            </Grid>
 
-                <Typography fontWeight='600'> Elewi E'lse </Typography>
-                <Typography fontWeight='500' color='#919191'>Spirit of prophecy</Typography>
-
-                </Stack>
-                </Stack>
-              </Box>
-            </Stack>
-
-          </Grid>
-
-
-          {/* Older */}
-          <Grid item xs={12} px='20px' >
-
-            <Stack mt='20px' direction='column' spacing={0}>
-              <Typography fontWeight='700'> OLDER</Typography>
-
-            </Stack>
-
-            <Stack pb='20px' spacing={0} direction='column' mt='20px' sx={{ boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' }}>
-              <YoutubeEmbed embedId="3xcIXPcT4ys" />
-
-              <Box pl='15px' mt='10px'>
-              <Stack direction='row' spacing={1} display='flex' alignItems='center'>
-
-                <Avatar alt="Remy Sharp" src={avatarimage2} sx={{ width: 35, height: 35 }} />
-
-                <Stack direction='column' spacing={0}>
-
-                <Typography fontWeight='600'> Victory Begins In The Dark</Typography>
-                <Typography fontWeight='500' color='#919191'> Joel Osteen</Typography>
-                </Stack>
-                </Stack>
-              </Box>
-            </Stack>
-
-          </Grid>
-
-
-          {/* 2 */}
-
-          <Grid item xs={12} px='20px' >
-
-            <Stack mt='20px' direction='column' spacing={0}>
-
-            </Stack>
-
-            <Stack pb='20px' spacing={0} direction='column' mt='20px' sx={{ boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' }}>
-              <YoutubeEmbed embedId="-C213vCvVuc" />
-
-              <Box pl='15px' mt='10px'>
-
-                <Stack direction='row' spacing={1} display='flex' alignItems='center'>
-
-                <Avatar alt="Remy Sharp" src={avatarimage2} sx={{ width: 35, height: 35 }} />
-
-                <Stack direction='column' spacing={0}>
-                <Typography fontWeight='600'>Tomorrow Belongs to God </Typography>
-                <Typography fontWeight='500' color='#919191'> Bishop TD Jakes </Typography>
-                </Stack>
-                </Stack>
-
-                
-              </Box>
-            </Stack>
-
-          </Grid>
+          ))}
 
         </Grid>
 
-        <Box mt='20px' width='100%' display='flex' alignItems='center' justifyContent='center'>
-          <ArrowRight><ArrowForwardIosIcon /></ArrowRight>
-        </Box>
       </Box>
 
-      <Box mt='80px' sx={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
-        <NewsLetter />
+
+      <Box mt='50px' width='100%' display='flex' alignItems='center' justifyContent='center'>
+        <Pagination count={15} variant="outlined" shape="rounded" />
       </Box>
 
 
@@ -200,8 +228,8 @@ const Live: React.FC = () => {
       }} size="medium" aria-label="add">
         <NewspaperIcon />
       </Fab>
-    </ThemeProvider>
-  )
+    </ThemeProvider >
+  );
 }
 
 export default Live;

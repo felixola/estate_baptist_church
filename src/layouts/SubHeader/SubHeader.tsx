@@ -13,7 +13,7 @@ const SubHeader: React.FC = () => {
 
     <ThemeProvider theme={theme}>
 
-         <Box sx={{ width: '100%', height: '50px', padding: {xs: '20px', md: '20px'},  background: '#3d6cb9', display: 'flex', alignItems: 'center'}}>
+         <Box sx={{ width: '100%', height: '50px', padding: {xs: '20px', md: '20px'},  background: '#000000', display: 'flex', alignItems: 'center'}}>
 
                 {/* Email */}
             <Stack direction='row' spacing={0.5} sx={{paddingLeft: {xs: '0px', md: '12px'}}}>

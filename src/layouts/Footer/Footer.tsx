@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Typography, Stack, Grid, Link,  Divider } from '@mui/material';
 import { routes } from '../../routes/route';
 import { NavLink } from 'react-router-dom';
-import EBCLogo from '../../assets/svgs/EBC.svg';
+import EBCLogo from '../../assets/svgs/EBCsvg.svg';
 import './Footer.css';
 import PlaceIcon from '@mui/icons-material/Place';
 import PhoneIcon from '@mui/icons-material/Phone';
