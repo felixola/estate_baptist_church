@@ -5,7 +5,6 @@ import News from '../pages/News/News';
 import More from '../pages/More/More';
 import Contact from '../pages/Contact/Contact';
 import About from '../pages/About/About';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 
 interface Route {
@@ -14,7 +13,6 @@ interface Route {
     path: string,
     enable: boolean,
     component: FC<{}>,
-    icons?: JSX.Element,
     btn?: JSX.Element,
 }
 
@@ -33,7 +31,6 @@ export const routes : Array<Route> = [
         path: "/live",
         enable: true,
         component: Live,
-        icons: <ArrowDropDownIcon/>,
     },
     {
         key: "news-route",
@@ -48,7 +45,6 @@ export const routes : Array<Route> = [
         path: "/more",
         enable: true,
         component: More,
-        icons: <ArrowDropDownIcon/>,
 
     },
     {

@@ -22,10 +22,9 @@ const Sermon: React.FC = () => {
 
           <Stack direction="row"  >
 
-            
-              <YoutubeEmbed embedId="o4xD01nVVR4" />
-         
-
+            <Box width='200px'>
+            <YoutubeEmbed embedId="o4xD01nVVR4" />
+            </Box>
 
             <Stack direction='column' spacing={1}>
               <Typography variant='h5' fontWeight='500' >Alive with Christ</Typography>

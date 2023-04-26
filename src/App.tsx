@@ -24,8 +24,6 @@ function App() {
 
           <Header />
 
-          <Divider />
-
           <Routes>
 
             {navRoutes.map ((route: any) => (

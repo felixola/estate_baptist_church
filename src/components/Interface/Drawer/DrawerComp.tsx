@@ -5,7 +5,6 @@ import {
   ListItem,
   ListItemText,
   IconButton,
-  ListItemIcon,
   ListItemButton,
   Link,
 } from "@mui/material";
@@ -44,7 +43,6 @@ const DrawerComponent: React.FC = () => {
             ":hover": {
               backgroundColor: "#FFFFFF"}}}>
               <ListItemText primary={page.title} />
-              <ListItemIcon>{page.icons}</ListItemIcon>
               </ListItemButton>
             </Link>
           

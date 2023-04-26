@@ -72,10 +72,7 @@ const Header: React.FC = () => {
                       variant="button"
                       sx={{  marginLeft: "2.5rem",}}>
 
-                      <Typography color='#000000' align='center' textTransform='uppercase' sx={{ fontSize: '15px', fontWeight: 500, display: 'flex', justifyContent: 'center', alignItems: 'center', }}> {page.title}  
-                        <span style={{ display: 'flex' , justifyContent: 'center', alignItems: 'center'}}>{page.icons}</span>
-                        
-                      </Typography>
+                      <Typography color='#000000' align='center' textTransform='uppercase' sx={{ fontSize: '15px', fontWeight: 600, display: 'flex', justifyContent: 'center', alignItems: 'center', }}> {page.title} </Typography>
                     </Link>
                     
                     
