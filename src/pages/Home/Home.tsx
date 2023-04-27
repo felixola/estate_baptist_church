@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../../components/Theme';
 import { ReadMore, ViewMore, Donations, WorshipBtn } from '../../components/Interface/Buttons/Buttons';
@@ -25,6 +25,8 @@ import NBC from '../../assets/images/NBC.jpg';
 import Marquee from "react-fast-marquee";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import Sermon from '../../components/Interface/Sermon/Sermon';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import './Home.css'
 
@@ -38,6 +40,13 @@ interface MarqueeProps {
 
 const Home: React.FC<MarqueeProps> = () => {
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      delay: 200,
+    });
+  }, []);
      
   return (
 
@@ -49,7 +58,7 @@ const Home: React.FC<MarqueeProps> = () => {
 
         <Stack direction='column' spacing={2}  className='parent' sx={{padding:'10px', paddingTop: '0 !important'}}>
 
-          <Typography align='center' sx={{ fontSize: { md: '4.2rem', xs: '3.2em' } }} variant='h2' fontWeight='800' color='#FFFFFF' lineHeight='1.1em'>
+          <Typography data-aos="zoom-in" align='center' sx={{ fontSize: { md: '4.2rem', xs: '3.2em' } }} variant='h2' fontWeight='800' color='#FFFFFF' lineHeight='1.1em'>
             <span style={{ color: '#ffb174', }}>Estate  </span>Baptist Church</Typography>
 
           <Typography align='center' color='#FFFFFF' sx={{ fontSize: { md: '20px', xs: '16px' } }} fontWeight='400'> A group of individuals in a small town
@@ -178,7 +187,7 @@ const Home: React.FC<MarqueeProps> = () => {
 
             <Stack direction='column' spacing={4}>
 
-              <img src={pastor} alt='pastor' className='pastor' />
+              <img src={pastor} alt='pastor' className='pastor' data-aos="zoom-in" />
 
               <ReadMore sx={{ display: { xs: 'flex', md: 'none' }, marginTop: '30px', alignSelf: 'center' }} variant='outlined' endIcon={<ArrowForwardIosOutlinedIcon />}>Read More</ReadMore>
             </Stack>

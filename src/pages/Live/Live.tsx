@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   Box,
   Stack,
@@ -28,6 +28,8 @@ import Search from '../../assets/svgs/search.svg';
 import Settings from '../../assets/svgs/setting-config.svg';
 import HomeIcon from '@mui/icons-material/Home';
 import Link from '@mui/material/Link';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // AIzaSyBlq7GCUq5P3vmXGT-q9G8_N_o4ySkqSJc
 
@@ -99,6 +101,13 @@ export const items: Array<Item> = [
 
 const Live: React.FC = () => {
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      delay: 200,
+    });
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
@@ -229,7 +238,7 @@ const Live: React.FC = () => {
 
           {items.map((cart) => (
 
-            <Grid item xs={12} md={6} px='20px'>
+            <Grid item xs={12} md={6} px='20px' data-aos="zoom-in">
 
               <Stack pb='20px' spacing={0} direction='column' mt='20px' sx={{ boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' }}>
                 <YoutubeEmbed embedId={cart.Youtube} />
