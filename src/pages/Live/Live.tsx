@@ -135,7 +135,7 @@ const Live: React.FC = () => {
 
       <Box className='avatar'>
 
-        <Stack direction='column' display='flex' alignItems='center' justifyContent='center' mt='40px'>
+        <Stack direction='column' data-aos="zoom-in"  display='flex' alignItems='center' justifyContent='center' mt='40px'>
           <VideocamIcon sx={{ color: '#ffb174', fontSize: { xs: '40px', md: '60px' } }} />
 
           <Typography fontWeight='900' sx={{ fontSize: { xs: '20px', md: '3em' } }} align='center'>WATCH EBC LIVE STREAMING!!!</Typography>
