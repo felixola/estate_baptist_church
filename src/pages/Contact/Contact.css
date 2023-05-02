@@ -1,0 +1,14 @@
+/* .grid1{
+    background-image: url('../../assets/images/dmitry-spravko-2h2qn9_1sxo-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    object-position: 50% 50%;  
+} */
+.image1{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: 50% 50%;
+}

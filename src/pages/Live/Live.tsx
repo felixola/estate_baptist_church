@@ -23,7 +23,6 @@ import avatarimage1 from '../../assets/images/pastor.jpg';
 import './Live.css';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import YoutubeEmbed from '../../components/Interface/YoutubeEmbed/YoutubeEmbed';
-import Footer from '../../layouts/Footer/Footer';
 import Search from '../../assets/svgs/search.svg';
 import Settings from '../../assets/svgs/setting-config.svg';
 import HomeIcon from '@mui/icons-material/Home';
@@ -57,7 +56,7 @@ export const items: Array<Item> = [
   {
     id: 2,
     Youtube: "QxHEsXt9K20",
-    Avat: image1,
+    Avat: image2,
     Title: "FAVOUR IN THE STORM",
     Minister: "Joel Osteen",
     Time: "24/Aril/2023",
@@ -65,7 +64,7 @@ export const items: Array<Item> = [
   {
     id: 3,
     Youtube: "8M_0eNtcmMo",
-    Avat: image1,
+    Avat: image3,
     Title: "THE MASTER NAGOTIATOR",
     Minister: "Bishop TD Jakes",
     Time: "Yesterday",
@@ -138,7 +137,7 @@ const Live: React.FC = () => {
         <Stack direction='column' data-aos="zoom-in"  display='flex' alignItems='center' justifyContent='center' mt='40px'>
           <VideocamIcon sx={{ color: '#ffb174', fontSize: { xs: '40px', md: '60px' } }} />
 
-          <Typography fontWeight='900' sx={{ fontSize: { xs: '20px', md: '3em' } }} align='center'>WATCH EBC LIVE STREAMING!!!</Typography>
+          <Typography fontWeight='900' sx={{ fontSize: { xs: '30px', md: '3em' } }} align='center'>WATCH EBC LIVE STREAMING!!!</Typography>
           <Typography fontWeight='400' sx={{ fontSize: { xs: '18px', md: '1.2em' } }} align='center' color='#919191'>Stream and view all live videos</Typography>
         </Stack>
 
@@ -197,6 +196,7 @@ const Live: React.FC = () => {
           <Grid item md={6} xs={12} px='20px' >
 
             <Stack mt='20px' direction='column' spacing={0}>
+              
               <Typography fontWeight='900' sx={{ fontSize: { xs: '20px', md: '1.2em' } }}> TODAY</Typography>
 
             </Stack>
@@ -271,9 +271,6 @@ const Live: React.FC = () => {
       </Box>
 
 
-      <Box mt='40px' >
-        <Footer />
-      </Box>
 
       <Fab sx={{
         margin: 0,

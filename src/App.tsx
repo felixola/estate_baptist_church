@@ -6,6 +6,7 @@ import { routes as navRoutes } from './routes/route';
 import theme from './components/Theme';
 import Header from './layouts/Header/Header';
 import SubHeader from './layouts/SubHeader/SubHeader';
+import Footer from './layouts/Footer/Footer';
 
 
 function App() {
@@ -37,6 +38,12 @@ function App() {
             ))}
 
           </Routes>
+
+          <Box>
+            
+          <Footer/>
+
+          </Box>
 
         </Router>
 
