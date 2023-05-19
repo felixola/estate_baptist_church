@@ -27,7 +27,7 @@ import Search from '../../assets/svgs/search.svg';
 import Settings from '../../assets/svgs/setting-config.svg';
 import HomeIcon from '@mui/icons-material/Home';
 import Link from '@mui/material/Link';
-import AOS from 'aos';
+import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 // AIzaSyBlq7GCUq5P3vmXGT-q9G8_N_o4ySkqSJc
@@ -101,7 +101,7 @@ export const items: Array<Item> = [
 const Live: React.FC = () => {
 
   useEffect(() => {
-    AOS.init({
+    Aos.init({
       duration: 1000,
       easing: 'ease-in-out',
       delay: 200,

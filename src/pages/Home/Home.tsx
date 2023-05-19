@@ -22,7 +22,7 @@ import Ra from '../../assets/images/Fforma2.png';
 import NBC from '../../assets/images/NBC.jpg';
 import Marquee from "react-fast-marquee";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import AOS from 'aos';
+import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Sermon from '../../components/Interface/Sermon/Sermon';
 import Book from '../../assets/svgs/book.svg'
@@ -40,7 +40,7 @@ interface MarqueeProps {
 const Home: React.FC<MarqueeProps> = () => {
 
   useEffect(() => {
-    AOS.init({
+    Aos.init({
       duration: 1000,
       easing: 'ease-in-out',
       delay: 200,
