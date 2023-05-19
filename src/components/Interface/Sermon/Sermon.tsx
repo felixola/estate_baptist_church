@@ -7,12 +7,15 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 
 
+
 const Sermon: React.FC = () => {
   return (
     <Box width='100%'>
 
 
       <Grid container display='flex' justifyContent='center' alignItems='center'>
+
+      
 
         {/* Grid 1 */}
 
@@ -22,17 +25,16 @@ const Sermon: React.FC = () => {
 
           <Stack direction="row"  >
 
-            <Box width='200px'>
+            <Box minWidth='400px' px='20px'>
             <YoutubeEmbed embedId="o4xD01nVVR4" />
             </Box>
 
             <Stack direction='column' spacing={1}>
-              <Typography variant='h5' fontWeight='500' >Alive with Christ</Typography>
+              <Typography variant='h5' fontWeight='700' >ALIVE WITH CHRIST</Typography>
               <Typography color='#777' fontWeight='400'>Speaker:
                 <span style={{ color: '#cb3b3b' }}> Revd M.O Akinola</span>
               </Typography>
 
-              <Typography variant='body1'  color='#777' fontWeight='400' >Lorem ipsum dolor sit amet </Typography>
               <Typography color='#777' fontWeight='400'> Date: 1 April 2023 </Typography>
 
               <Stack direction='row'>
@@ -59,11 +61,11 @@ const Sermon: React.FC = () => {
 
 
             <Stack direction='column' spacing={1}>
-              <Typography variant='h5' fontWeight='500'>Resurrection Celebration</Typography>
+              <Typography variant='h5' fontWeight='700'>RESSURECTION OF CHRIST</Typography>
               <Typography color='#777' fontWeight='400'>Speaker:
                 <span style={{ color: '#cb3b3b' }}> Revd A.J Adefarasin</span>
               </Typography>
-              <Typography variant='body1'  color='#777' fontWeight='400' >Lorem ipsum dolor sit amet </Typography>
+          
               <Typography color='#777' fontWeight='400'> Date: 6 April 2023 </Typography>
 
               <Stack direction='row'>
@@ -73,8 +75,11 @@ const Sermon: React.FC = () => {
               </Stack>
             </Stack>
 
-            
+            <Box minWidth='400px' px='20px'>
+
               <YoutubeEmbed embedId="57Mw8HcQVS0" />
+
+            </Box>
            
 
           </Stack>

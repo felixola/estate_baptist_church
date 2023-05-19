@@ -10,23 +10,22 @@ import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutl
 import CardComp from '../../components/Interface/Cards/CardComp';
 import YoutubeEmbed from '../../components/Interface/YoutubeEmbed/YoutubeEmbed';
 import NewsLetter from '../../components/Interface/NewsLetter/NewsLetter';
-import Footer from '../../layouts/Footer/Footer';
 import Church from '../../assets/svgs/church-one.png';
 import Mission from '../../assets/svgs/mission.png';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import CardComponent from '../../components/Interface/CardComponent/CardComponent';
 import domi from '../../assets/images/dominion.png';
 import bsf from '../../assets/images/bsf.png';
-import Book from '../../assets/svgs/book-open.svg';
-import Executive from '../../assets/svgs/users-group.svg';
+import Executive from '../../assets/svgs/peoples-two.svg';
 import Ga from '../../assets/images/ga.png';
 import Ra from '../../assets/images/Fforma2.png';
 import NBC from '../../assets/images/NBC.jpg';
 import Marquee from "react-fast-marquee";
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import Sermon from '../../components/Interface/Sermon/Sermon';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Sermon from '../../components/Interface/Sermon/Sermon';
+import Book from '../../assets/svgs/book.svg'
 
 import './Home.css'
 
@@ -58,7 +57,7 @@ const Home: React.FC<MarqueeProps> = () => {
 
         <Stack direction='column' spacing={2}  className='parent' sx={{padding:'10px', paddingTop: '0 !important'}}>
 
-          <Typography data-aos="zoom-in" align='center' sx={{ fontSize: { md: '4.2rem', xs: '3.2em' } }} variant='h2' fontWeight='800' color='#FFFFFF' lineHeight='1.1em'>
+          <Typography data-aos="zoom-in" align='center' sx={{ fontSize: { md: '4.2rem', xs: '3.2em' },}} variant='h2' fontWeight='800' color='#FFFFFF' lineHeight='1.1em'>
             <span style={{ color: '#ffb174', }}>Estate  </span>Baptist Church</Typography>
 
           <Typography align='center' color='#FFFFFF' sx={{ fontSize: { md: '20px', xs: '16px' } }} fontWeight='400'> A group of individuals in a small town
@@ -89,7 +88,7 @@ const Home: React.FC<MarqueeProps> = () => {
 
           <AccessTimeIcon sx={{ color: '#ffb174' }} />
 
-          <Typography color='#FFFFFF' data-aos="fade-left" >Join us on Sunday by 9pm</Typography>
+          <Typography color='#E1E1E1' data-aos="fade-left" >Join us on Sunday by 9pm</Typography>
 
         </Stack>
 
@@ -236,8 +235,9 @@ const Home: React.FC<MarqueeProps> = () => {
 
           <Grid item md={6} xs={12} display='flex' justifyContent='center' alignItems='center' sx={{ marginTop: { xs: '50px' } }}>
 
-
-            <YoutubeEmbed embedId="61T_DDuBYrY" />
+            <Box minWidth='500px'>
+            <YoutubeEmbed embedId="K-cJE9L-9iw" />
+            </Box>
 
 
           </Grid>
@@ -249,7 +249,8 @@ const Home: React.FC<MarqueeProps> = () => {
       <Box width='100%' mt='50px' >
         <Stack display='flex' justifyContent='center' alignItems='center'>
 
-        <img src={Book} alt="book" style={{ width: '50px' }} />
+        <img src={Book} alt="mission" style={{ width: '50px' }} />
+
       <Typography align='center' sx={{ fontSize: { md: '36px', xs: '26px' } }} fontWeight='900'>LATEST SERMON</Typography>
          <Typography mb='20px' variant='h6' fontWeight='400' align='center' color='#777'>
          Don't miss out on any sermon
@@ -258,6 +259,7 @@ const Home: React.FC<MarqueeProps> = () => {
      
 
          <Box mt='30px'>
+         
          <Sermon/>
          </Box>
         
@@ -268,7 +270,7 @@ const Home: React.FC<MarqueeProps> = () => {
       <Box width='100%' mt='80px'>
       <Stack display='flex' justifyContent='center' alignItems='center'>
       <img src={Executive} alt="executives" style={{ width: '50px' }} />
-        <Typography align='center' sx={{ fontSize: { md: '36px', xs: '26px' } }} fontWeight='900'>EXECUTIVES</Typography>
+        <Typography sx={{ fontSize: { md: '36px', xs: '26px' } }} fontWeight='900' align='center'>EXECUTIVES</Typography>
          <Typography mb='20px' align='center' variant='h6' fontWeight='400' color='#777'>All elected council members 2023</Typography>
          </Stack>
         <Marquee gradient={false} speed={80}>
@@ -284,14 +286,11 @@ const Home: React.FC<MarqueeProps> = () => {
 
 
       {/* News letter */}
-      <Box mt='80px' sx={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
+      <Box mb='50px' mt='80px' sx={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
         <NewsLetter />
       </Box>
 
-      {/* Footer */}
-      <Box mt='40px' >
-        <Footer />
-      </Box>
+      
 
       <Fab sx={{
         margin: 0,

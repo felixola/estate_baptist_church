@@ -9,11 +9,15 @@ blockquote {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
     font-style: italic;
+    font-weight: 300;
     margin-top: 50px;
     padding: 0.35em 40px;
     line-height: 1.45;
     position: relative;
     color: #383838;
+    border-top:3px solid #ffb174;
+    border-bottom:3px solid #ffb174;
+   
 }
 
 
@@ -24,8 +28,8 @@ blockquote:before {
     font-size: 80px;
     position: absolute;
     left: 5px;
-    top: -50px;
-    color: #7a7a7a;
+    top: -60px;
+    color: #E1E1E1;
 }
 
 

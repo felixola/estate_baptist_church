@@ -2,6 +2,7 @@ import React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../../Theme';
 import { Typography, Card, CardContent, Grid } from '@mui/material';
+import './CardComp.css';
 
 const CardComp: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const CardComp: React.FC = () => {
       {/* border: '0.5px solid #E8E2E2', */}
         {/* Vision */}
         <Grid item md={4} xs={12} position='relative' display='flex' alignItems='center' justifyContent='center'>
-          <Card sx={{ maxWidth: 340, height: 400, boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' , }} >
+          <Card sx={{ maxWidth: 340, height: 400, boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' , }} className='boxCorner'>
             <CardContent>
               <Typography variant='h6' fontWeight='600' align='left'> Our Vision </Typography>
               <Typography sx={{ fontSize: 15 }} color="text.secondary" gutterBottom>
@@ -29,7 +30,7 @@ const CardComp: React.FC = () => {
 
         {/* Our mission */}
         <Grid item md={4} xs={12} position='relative' display='flex' alignItems='center' justifyContent='center'>
-          <Card sx={{ maxWidth: 340, height: 400, boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' , }} >
+          <Card sx={{ maxWidth: 340, height: 400, boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' , }} className='boxCorner' >
             <CardContent>
               <Typography variant='h6' fontWeight='600' align='left'> Our Mission </Typography>
               <Typography variant='body1' sx={{ fontSize: 15 }} color="text.secondary" gutterBottom>
@@ -51,7 +52,7 @@ const CardComp: React.FC = () => {
 
         {/* Our Values */}
         <Grid item md={4} xs={12} position='relative' display='flex' alignItems='center' justifyContent='center'>
-          <Card sx={{ maxWidth: 340, height: 400, boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' ,}}>
+          <Card sx={{ maxWidth: 340, height: 400, boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' ,}} className='boxCorner'> 
             <CardContent>
               <Typography variant='h6' fontWeight='600' align='left'> Our Values </Typography>
               <Typography sx={{ fontSize: 15 }} color="text.secondary" gutterBottom>

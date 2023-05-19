@@ -266,7 +266,7 @@ const Live: React.FC = () => {
       </Box>
 
 
-      <Box mt='50px' width='100%' display='flex' alignItems='center' justifyContent='center'>
+      <Box mt='50px' width='100%' display='flex' alignItems='center' justifyContent='center' mb='20px'>
         <Pagination count={15} shape="rounded" />
       </Box>
 

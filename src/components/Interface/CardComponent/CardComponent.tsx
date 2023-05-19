@@ -14,7 +14,7 @@ const CardComponent: React.FC = () => {
 
     <ThemeProvider theme={theme} >
 
-      <Grid container sx={{ display: 'flex', justifyContent: "center", alignItems: "center" }}>
+      <Grid container sx={{ display: 'flex', justifyContent: "center", alignItems: "center" }} pt='40px' pb='40px'>
 
         {/* Pastor */}
         <Grid item md={4} xs={4} display='flex' alignItems='center' justifyContent='center'>
@@ -25,7 +25,7 @@ const CardComponent: React.FC = () => {
            display='flex' 
            alignItems='center' 
            justifyContent='center' 
-           sx={{ border: '1px solid #EEEEEE', borderRadius: '15px', textAlign: 'center', dropShadow:'0px 2px 13px -5px #000000' }}>
+           sx={{   textAlign: 'center', boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)' }}>
 
             <Stack direction='column' spacing={3} display='flex' alignItems='center' justifyContent='center' width='100%'>
 
@@ -36,8 +36,8 @@ const CardComponent: React.FC = () => {
                 sx={{ width: 80, height: 80 }}
               />
 
-              <Typography  align='center' variant='h5' color=' #000000' fontWeight='600'>Rev. M.O Akinola</Typography>
-              <Typography align='center' mt='0 !important' color='#3d6cb9' fontWeight='400'>Pastor</Typography>
+              <Typography  align='center' variant='h5' color=' #000000' fontWeight='800'>REV. M.O AKINOLA</Typography>
+              <Typography align='center' mt='0 !important' color='#3d6cb9' fontWeight='500'>PASTOR</Typography>
               <blockquote>
                 It is not the critic who counts; not the man  who points out how the strong man stumbles, or where the doer of deeds
               </blockquote>
@@ -51,7 +51,7 @@ const CardComponent: React.FC = () => {
         {/* Our mission */}
         <Grid item md={4} xs={4} display='flex' alignItems='center' justifyContent='center'>
 
-          <Box mr='20px'  maxWidth='350px' height='400px' display='flex' alignItems='center' justifyContent='center' sx={{ border: '1px solid #EEEEEE', borderRadius: '15px', textAlign: 'center' }}>
+          <Box mr='20px'  maxWidth='350px' height='400px' display='flex' alignItems='center' justifyContent='center' sx={{ boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)',  textAlign: 'center' }}>
 
             <Stack direction='column' spacing={3} display='flex' alignItems='center' justifyContent='center' width='100%'>
 
@@ -61,8 +61,8 @@ const CardComponent: React.FC = () => {
                 sx={{ width: 80, height: 80 }}
               />
 
-              <Typography align='center' variant='h5' color=' #000000' fontWeight='600'>Mr Femi Okunade</Typography>
-              <Typography align='center' mt='0 !important' color='#3d6cb9' fontWeight='400'>Secretary</Typography>
+              <Typography align='center' variant='h5' color=' #000000' fontWeight='800'>MR FEMI OKUNADE</Typography>
+              <Typography align='center' mt='0 !important' color='#3d6cb9' fontWeight='500'>SECRETARY</Typography>
               <blockquote>
                 It is not the critic who counts; not the man  who points out how the strong man stumbles, or where the doer of deeds
               </blockquote>
@@ -78,7 +78,7 @@ const CardComponent: React.FC = () => {
         {/* Our Values */}
         <Grid item md={4} xs={4} display='flex' alignItems='center' justifyContent='center'>
 
-          <Box mr='20px' maxWidth='350px' height='400px' display='flex' alignItems='center' justifyContent='center' sx={{ border: '1px solid #EEEEEE', borderRadius: '15px', textAlign: 'center' }}>
+          <Box mr='20px' maxWidth='350px' height='400px' display='flex' alignItems='center' justifyContent='center' sx={{ boxShadow: '0px 0px 35px 0px rgba(0,0,0,0.1)',  textAlign: 'center' }}>
 
             <Stack direction='column' spacing={3} display='flex' alignItems='center' justifyContent='center' width='100%'>
 
@@ -88,8 +88,8 @@ const CardComponent: React.FC = () => {
                 src={image3}
                 sx={{ width: 80, height: 80 }}/>
 
-              <Typography align='center' variant='h5' color=' #000000' fontWeight='600'> Mr Bamikole Oluwafemi</Typography>
-              <Typography align='center' mt='0 !important' color='#3d6cb9' fontWeight='400'>Financial Secretary</Typography>
+              <Typography align='center' variant='h5' color=' #000000' fontWeight='800'> MR BAMIKOLE OLUWAFEMI</Typography>
+              <Typography align='center' mt='0 !important' color='#3d6cb9' fontWeight='500'>FINANCIAL SECRETARY</Typography>
               <blockquote>
              
                 It is not the critic who counts; not the man  who points out how the strong man stumbles, or where the doer of deeds

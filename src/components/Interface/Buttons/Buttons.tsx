@@ -10,7 +10,7 @@ const ReadMore = styled(Button)({
     color: '#FFFFFF', 
     borderRadius: '20px', 
     '&:hover': {
-      backgroundColor: '#40514e',
+      backgroundColor: '#1f4287',
     }
   })
 

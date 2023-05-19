@@ -52,7 +52,6 @@ const Contact: React.FC = () => {
                       InputProps={{
                         startAdornment: <InputAdornment position="start">
                           <PersonIcon sx={{ color: '#919191' }} /></InputAdornment>,}}
-
                       size='medium'
                       id="my-input" aria-describedby="my-helper-text" variant='outlined' />
                   </Stack>
